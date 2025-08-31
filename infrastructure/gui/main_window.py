@@ -1,4 +1,3 @@
-from threading import Thread
 from tkinter import ttk
 
 import customtkinter as ctk
@@ -7,7 +6,6 @@ from constants.constants import MainWindowParams
 from infrastructure.gui.main_frame import MainFrame
 from interface_adapters.db_adapter.db_adapter import DBAdapter
 from interface_adapters.gui_adapter.gui_adapter import GUIAdapter
-from use_cases.reservation import reservation
 
 
 class WindowSettings:
@@ -88,6 +86,4 @@ class App:
         self.db_adapter = DBAdapter(app)
         self.frame = MainFrame(app, self.gui_adapter, self.db_adapter)
 
-        reserv = Thread(target=reservation)
-        reserv.start()
         app.mainloop()

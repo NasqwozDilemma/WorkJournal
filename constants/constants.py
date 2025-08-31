@@ -192,11 +192,11 @@ class ErrorsParams:
 
 class Reservation:
     FRIDAY = 4
-    ONE_DAY = 1
     ONE_WEEK = 7
-    SAVE_HOURS = 17
-    BACKUPS_PATH = "./db_backups/"
-    DB_BACKUP_FILE = "workjournaldb_work.sql"
+    BACKUPS_DIRNAME = "db_backups"
+    DUMP_BASENAME = "db_backup.sql"
+    RETENTION_DAYS = 365
+    SAVE_HOUR = 17
 
 
 class DateTimeValues:
@@ -222,9 +222,37 @@ class DefaultLists:
         "Согласование исходных данных",
         "Указание"
     ]
-    NAME_LIST: ClassVar[list[str]] = []
-    COMMUNICATION_LIST: ClassVar[list[str]] = []
-    AUTHOR_LIST: ClassVar[list[str]] = []
+    NAME_LIST: ClassVar[list[str]] = [
+        "Балашиха",
+        "Басманный пер.",
+        "Ипатьевский 12",
+        "Купавна",
+        "МВД",
+        "МВЦ",
+        "Новоспасский",
+        "Ордынка",
+        "П-13",
+        "Пруд-Ключики",
+        "Расторгуевский",
+        "Старая площадь 8/5",
+        "Спецвокзал",
+        "Уланский",
+        "ФПУ",
+        "Ярцевская"
+    ]
+    COMMUNICATION_LIST: ClassVar[list[str]] = [
+        "AcmePacket",
+        "D-Link",
+        "ESR",
+        "EWSD",
+        "SBC",
+        "SMG",
+        "TAU-36.IP",
+        "TAU-72.IP",
+        "Zyxel",
+        "РТУ"
+    ]
+    AUTHOR_LIST: ClassVar[list[str]] = ["Бедов", "Кудрявцева", "Павлов", "Русанов", "Шаров", "Юдин"]
     STATUS_LIST: ClassVar[list[str]] = ["Выполнено", "Не выполнено"]
 
 

@@ -36,10 +36,10 @@ options = {
             "os",
             "threading",
             "configparser",
+            "logging",
         ],
         "include_files": [CONFIG_DIRECTORY, DB_DIRECTORY],
         "excludes": [
-            "logging",
             "unittest",
             "html",
             "http",
@@ -59,7 +59,7 @@ options = {
 
 setup(
     name="WorkJournal",
-    version="2025.05.02",
+    version="2025.08.31",
     description="WorkJournal",
     author="Dmitriy Pavlov",
     executables=executables,

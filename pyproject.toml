@@ -1,6 +1,6 @@
 [project]
 name = "workjournal"
-version = "1.0.6"
+version = "2025.08.31"
 description = "Worjournal"
 readme = "README.md"
 requires-python = ">=3.9"
